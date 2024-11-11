@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Artista</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            width: 100%;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            border: 2px solid #ddd;
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            border-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Portafolio de Artista</h1>
+    <div class="gallery">
+        <a href="obra1.html"><img src="media/Animación.gif" alt="Obra 1"></a>
+        <a href="obra2.html"><img src="media/Animación.gif" alt="Obra 2"></a>
+        <a href="obra3.html"><img src="media/Animación.gif" alt="Obra 3"></a>
+    </div>
+</body>
+</html>
